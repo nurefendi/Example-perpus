@@ -1,0 +1,10 @@
+D:\visualstudio-workspace\Perpus\Perpus\bin\Debug\Perpus.exe.config
+D:\visualstudio-workspace\Perpus\Perpus\bin\Debug\Perpus.exe
+D:\visualstudio-workspace\Perpus\Perpus\bin\Debug\Perpus.pdb
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.csprojResolveAssemblyReference.cache
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.Properties.Resources.resources
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.csproj.GenerateResource.Cache
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.exe
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.pdb
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.Dashboard.resources
+D:\visualstudio-workspace\Perpus\Perpus\obj\Debug\Perpus.Login.resources
