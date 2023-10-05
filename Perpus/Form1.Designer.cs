@@ -30,12 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pengembalianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataBukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pengembalianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanPeminjamanBulanIniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanPengembalianBulanIniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.masukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +54,7 @@
             this.keluarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(566, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(834, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,6 +67,25 @@
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.masterToolStripMenuItem.Text = "Master";
+            // 
+            // dataBukuToolStripMenuItem
+            // 
+            this.dataBukuToolStripMenuItem.Name = "dataBukuToolStripMenuItem";
+            this.dataBukuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dataBukuToolStripMenuItem.Text = "Data buku";
+            this.dataBukuToolStripMenuItem.Click += new System.EventHandler(this.dataBukuToolStripMenuItem_Click);
+            // 
+            // dataMemberToolStripMenuItem
+            // 
+            this.dataMemberToolStripMenuItem.Name = "dataMemberToolStripMenuItem";
+            this.dataMemberToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.dataMemberToolStripMenuItem.Text = "Data member";
+            // 
+            // dataAdminToolStripMenuItem
+            // 
+            this.dataAdminToolStripMenuItem.Name = "dataAdminToolStripMenuItem";
+            this.dataAdminToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.dataAdminToolStripMenuItem.Text = "Data admin";
             // 
             // peminjamanToolStripMenuItem
             // 
@@ -88,24 +107,6 @@
             this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
             this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.laporanToolStripMenuItem.Text = "Laporan";
-            // 
-            // dataBukuToolStripMenuItem
-            // 
-            this.dataBukuToolStripMenuItem.Name = "dataBukuToolStripMenuItem";
-            this.dataBukuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataBukuToolStripMenuItem.Text = "Data buku";
-            // 
-            // dataMemberToolStripMenuItem
-            // 
-            this.dataMemberToolStripMenuItem.Name = "dataMemberToolStripMenuItem";
-            this.dataMemberToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataMemberToolStripMenuItem.Text = "Data member";
-            // 
-            // dataAdminToolStripMenuItem
-            // 
-            this.dataAdminToolStripMenuItem.Name = "dataAdminToolStripMenuItem";
-            this.dataAdminToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataAdminToolStripMenuItem.Text = "Data admin";
             // 
             // laporanPeminjamanBulanIniToolStripMenuItem
             // 
@@ -136,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 261);
+            this.ClientSize = new System.Drawing.Size(834, 407);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";

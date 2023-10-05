@@ -31,5 +31,11 @@ namespace Perpus
                 control.Enabled = isDisabled;
             }
         }
+
+        private void dataBukuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataBuku dataBuku = new DataBuku();
+            dataBuku.Show();
+        }
     }
 }
