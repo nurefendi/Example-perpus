@@ -30,19 +30,19 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -90,13 +90,13 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(537, 278);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // textBox4
+            // richTextBox1
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(128, 198);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 26);
-            this.textBox4.TabIndex = 5;
+            this.richTextBox1.Location = new System.Drawing.Point(128, 128);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(377, 64);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
             // 
             // label5
             // 
@@ -137,15 +137,6 @@
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Email";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(128, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 34);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Simpan";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -202,13 +193,22 @@
             this.comboBox1.Size = new System.Drawing.Size(219, 28);
             this.comboBox1.TabIndex = 14;
             // 
-            // richTextBox1
+            // textBox4
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(128, 128);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(377, 64);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(128, 198);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(219, 26);
+            this.textBox4.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(128, 228);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 34);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Simpan";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // DataMember
             // 
