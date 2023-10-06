@@ -44,34 +44,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBuku.cs">
+    <Compile Include="FormComponent\Peminjaman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormComponent\Peminjaman.Designer.cs">
+      <DependentUpon>Peminjaman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComponent\Pengembalian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormComponent\Pengembalian.Designer.cs">
+      <DependentUpon>Pengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBuku.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataBuku.Designer.cs">
+    <Compile Include="FormDataBuku.Designer.cs">
+      <DependentUpon>FormDataBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComponent\DataAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormComponent\DataAdmin.Designer.cs">
+      <DependentUpon>DataAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComponent\DataBuku.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormComponent\DataBuku.Designer.cs">
       <DependentUpon>DataBuku.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormComponent\DataMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormComponent\DataMember.Designer.cs">
+      <DependentUpon>DataMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DataBuku.resx">
+    <EmbeddedResource Include="FormComponent\Peminjaman.resx">
+      <DependentUpon>Peminjaman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataBuku.resx">
+      <DependentUpon>FormDataBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComponent\DataAdmin.resx">
+      <DependentUpon>DataAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComponent\DataBuku.resx">
       <DependentUpon>DataBuku.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormComponent\DataMember.resx">
+      <DependentUpon>DataMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +137,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

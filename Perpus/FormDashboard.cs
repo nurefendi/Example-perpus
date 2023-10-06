@@ -19,7 +19,7 @@ namespace Perpus
 
         private void masukToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            FormLogin login = new FormLogin();
             login.Show();
             DisableControls(false);
         }
@@ -34,7 +34,7 @@ namespace Perpus
 
         private void dataBukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DataBuku dataBuku = new DataBuku();
+            FormDataBuku dataBuku = new FormDataBuku();
             dataBuku.Show();
         }
     }
