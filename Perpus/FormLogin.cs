@@ -41,10 +41,7 @@ namespace Perpus
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Dashboard dasboard = new Dashboard();
-            dasboard.Show();
-
-            this.Close();
+            this.Dispose();
         }
     }
 }

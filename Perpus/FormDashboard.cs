@@ -12,6 +12,9 @@ namespace Perpus
 {
     public partial class Dashboard : Form
     {
+        FormDataBuku formDataBuku = null;
+        FormLogin formLogin = null;
+
         public Dashboard()
         {
             InitializeComponent();
@@ -19,23 +22,57 @@ namespace Perpus
 
         private void masukToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormLogin login = new FormLogin();
-            login.Show();
-            DisableControls(false);
-        }
-
-        public void DisableControls(bool isDisabled)
-        {
-            foreach (Control control in this.Controls)
-            {
-                control.Enabled = isDisabled;
-            }
+            this.showFormLogin();
         }
 
         private void dataBukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormDataBuku dataBuku = new FormDataBuku();
-            dataBuku.Show();
+            this.showFormDataBuku();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello Word!");
+        }
+
+
+        private void showFormDataBuku()
+        {
+            if (formDataBuku == null || formDataBuku.IsDisposed)
+            {
+                formDataBuku = new FormDataBuku();
+                formDataBuku.MdiParent = this;
+                formDataBuku.Show();
+            }
+            else
+            {
+                formDataBuku.Activate();
+            }
+        }
+
+        private void showFormLogin()
+        {
+            if (formLogin == null || formLogin.IsDisposed)
+            {
+                formLogin = new FormLogin();
+                formLogin.MdiParent = this;
+                formLogin.Show();
+            }
+            else
+            {
+                formLogin.Activate();
+            }
+        }
+
+        private void btnOpenFormDataBuku_Click(object sender, EventArgs e)
+        {
+            this.showFormDataBuku();
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            showFormLogin();
         }
     }
 }

@@ -28,117 +28,160 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataBukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pengembalianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPeminjamanBulanIniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPengembalianBulanIniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.masukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnOpenFormDataBuku = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataMemberToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataAdminToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.laporanPeminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanPengembalianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.sISTEMPERPUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.masterToolStripMenuItem,
-            this.peminjamanToolStripMenuItem,
-            this.pengembalianToolStripMenuItem,
-            this.laporanToolStripMenuItem,
-            this.masukToolStripMenuItem,
-            this.keluarToolStripMenuItem});
+            this.sISTEMPERPUSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(834, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(834, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // masterToolStripMenuItem
+            // toolStrip1
             // 
-            this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dataBukuToolStripMenuItem,
-            this.dataMemberToolStripMenuItem,
-            this.dataAdminToolStripMenuItem});
-            this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.masterToolStripMenuItem.Text = "Master";
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton1,
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripDropDownButton2,
+            this.toolStripSeparator1,
+            this.toolStripButton3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 29);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(129, 378);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // dataBukuToolStripMenuItem
+            // toolStripDropDownButton1
             // 
-            this.dataBukuToolStripMenuItem.Name = "dataBukuToolStripMenuItem";
-            this.dataBukuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataBukuToolStripMenuItem.Text = "Data buku";
-            this.dataBukuToolStripMenuItem.Click += new System.EventHandler(this.dataBukuToolStripMenuItem_Click);
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnOpenFormDataBuku,
+            this.dataMemberToolStripMenuItem2,
+            this.dataAdminToolStripMenuItem1});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(126, 25);
+            this.toolStripDropDownButton1.Text = "Master";
             // 
-            // dataMemberToolStripMenuItem
+            // btnOpenFormDataBuku
             // 
-            this.dataMemberToolStripMenuItem.Name = "dataMemberToolStripMenuItem";
-            this.dataMemberToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.dataMemberToolStripMenuItem.Text = "Data member";
+            this.btnOpenFormDataBuku.Name = "btnOpenFormDataBuku";
+            this.btnOpenFormDataBuku.Size = new System.Drawing.Size(152, 22);
+            this.btnOpenFormDataBuku.Text = "Data Buku";
+            this.btnOpenFormDataBuku.Click += new System.EventHandler(this.btnOpenFormDataBuku_Click);
             // 
-            // dataAdminToolStripMenuItem
+            // dataMemberToolStripMenuItem2
             // 
-            this.dataAdminToolStripMenuItem.Name = "dataAdminToolStripMenuItem";
-            this.dataAdminToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.dataAdminToolStripMenuItem.Text = "Data admin";
+            this.dataMemberToolStripMenuItem2.Name = "dataMemberToolStripMenuItem2";
+            this.dataMemberToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.dataMemberToolStripMenuItem2.Text = "Data Member";
             // 
-            // peminjamanToolStripMenuItem
+            // dataAdminToolStripMenuItem1
             // 
-            this.peminjamanToolStripMenuItem.Name = "peminjamanToolStripMenuItem";
-            this.peminjamanToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.peminjamanToolStripMenuItem.Text = "Peminjaman";
+            this.dataAdminToolStripMenuItem1.Name = "dataAdminToolStripMenuItem1";
+            this.dataAdminToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dataAdminToolStripMenuItem1.Text = "Data admin";
             // 
-            // pengembalianToolStripMenuItem
+            // toolStripButton1
             // 
-            this.pengembalianToolStripMenuItem.Name = "pengembalianToolStripMenuItem";
-            this.pengembalianToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.pengembalianToolStripMenuItem.Text = "Pengembalian";
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(126, 25);
+            this.toolStripButton1.Text = "Peminjaman";
             // 
-            // laporanToolStripMenuItem
+            // toolStripButton2
             // 
-            this.laporanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.laporanPeminjamanBulanIniToolStripMenuItem,
-            this.laporanPengembalianBulanIniToolStripMenuItem});
-            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.laporanToolStripMenuItem.Text = "Laporan";
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(101, 20);
+            this.toolStripButton2.Text = "Pengembalian";
             // 
-            // laporanPeminjamanBulanIniToolStripMenuItem
+            // toolStripDropDownButton2
             // 
-            this.laporanPeminjamanBulanIniToolStripMenuItem.Name = "laporanPeminjamanBulanIniToolStripMenuItem";
-            this.laporanPeminjamanBulanIniToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.laporanPeminjamanBulanIniToolStripMenuItem.Text = "Laporan peminjaman bulan ini";
+            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.laporanPeminjamanToolStripMenuItem,
+            this.laporanPengembalianToolStripMenuItem});
+            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
+            this.toolStripDropDownButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(101, 20);
+            this.toolStripDropDownButton2.Text = "Laporan";
             // 
-            // laporanPengembalianBulanIniToolStripMenuItem
+            // laporanPeminjamanToolStripMenuItem
             // 
-            this.laporanPengembalianBulanIniToolStripMenuItem.Name = "laporanPengembalianBulanIniToolStripMenuItem";
-            this.laporanPengembalianBulanIniToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.laporanPengembalianBulanIniToolStripMenuItem.Text = "Laporan pengembalian bulan ini";
+            this.laporanPeminjamanToolStripMenuItem.Name = "laporanPeminjamanToolStripMenuItem";
+            this.laporanPeminjamanToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.laporanPeminjamanToolStripMenuItem.Text = "Laporan peminjaman";
             // 
-            // masukToolStripMenuItem
+            // laporanPengembalianToolStripMenuItem
             // 
-            this.masukToolStripMenuItem.Name = "masukToolStripMenuItem";
-            this.masukToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.masukToolStripMenuItem.Text = "Masuk";
-            this.masukToolStripMenuItem.Click += new System.EventHandler(this.masukToolStripMenuItem_Click);
+            this.laporanPengembalianToolStripMenuItem.Name = "laporanPengembalianToolStripMenuItem";
+            this.laporanPengembalianToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.laporanPengembalianToolStripMenuItem.Text = "Laporan pengembalian";
             // 
-            // keluarToolStripMenuItem
+            // toolStripButton3
             // 
-            this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
-            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.keluarToolStripMenuItem.Text = "Keluar";
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(101, 20);
+            this.toolStripButton3.Text = "Masuk";
+            this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(101, 6);
+            // 
+            // sISTEMPERPUSToolStripMenuItem
+            // 
+            this.sISTEMPERPUSToolStripMenuItem.Enabled = false;
+            this.sISTEMPERPUSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.sISTEMPERPUSToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.sISTEMPERPUSToolStripMenuItem.Name = "sISTEMPERPUSToolStripMenuItem";
+            this.sISTEMPERPUSToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
+            this.sISTEMPERPUSToolStripMenuItem.Text = "SISTEM PERPUS";
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 407);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -146,6 +189,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,17 +199,19 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem masterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataBukuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataMemberToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataAdminToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem peminjamanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pengembalianToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPeminjamanBulanIniToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPengembalianBulanIniToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem masukToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem btnOpenFormDataBuku;
+        private System.Windows.Forms.ToolStripMenuItem dataMemberToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem dataAdminToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
+        private System.Windows.Forms.ToolStripMenuItem laporanPeminjamanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem laporanPengembalianToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem sISTEMPERPUSToolStripMenuItem;
 
     }
 }
