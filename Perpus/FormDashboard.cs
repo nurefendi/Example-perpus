@@ -12,11 +12,13 @@ namespace Perpus
 {
     public partial class Dashboard : Form
     {
-        FormDataBuku formDataBuku = null;
-        FormLogin formLogin = null;
+        private FormDataBuku formDataBuku = null;
+        private FormLogin formLogin = null;
+        private DbConnection dbConnection;
 
         public Dashboard()
         {
+            dbConnection = new DbConnection();
             InitializeComponent();
         }
 
@@ -29,12 +31,6 @@ namespace Perpus
         {
             this.showFormDataBuku();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello Word!");
-        }
-
 
         private void showFormDataBuku()
         {
@@ -73,6 +69,36 @@ namespace Perpus
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             showFormLogin();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            enableReconnectDB();
+        }
+
+        private void enableReconnectDB() {
+
+            if (dbConnection.GetConnection().State != System.Data.ConnectionState.Open)
+            {
+                this.Controls.OfType<Control>().ToList().ForEach(c => c.Enabled = false);
+
+                DialogResult result = MessageBox.Show("Can't connect to database! \n Do you want to reconnect?", "Reconnect?", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    dbConnection = new DbConnection();
+                    this.enableReconnectDB();
+                }
+                else
+                {
+                    Application.Exit();
+                }
+
+            }
+            else
+            {
+                this.Controls.OfType<Control>().ToList().ForEach(c => c.Enabled = true);
+            }
         }
     }
 }

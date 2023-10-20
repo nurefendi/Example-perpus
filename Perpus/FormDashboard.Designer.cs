@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.sISTEMPERPUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuUtama = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.btnOpenFormDataBuku = new System.Windows.Forms.ToolStripMenuItem();
             this.dataMemberToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,11 +41,10 @@
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.laporanPeminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanPengembalianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.sISTEMPERPUSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.menuUtama.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -57,23 +57,32 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStrip1
+            // sISTEMPERPUSToolStripMenuItem
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sISTEMPERPUSToolStripMenuItem.Enabled = false;
+            this.sISTEMPERPUSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.sISTEMPERPUSToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.sISTEMPERPUSToolStripMenuItem.Name = "sISTEMPERPUSToolStripMenuItem";
+            this.sISTEMPERPUSToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
+            this.sISTEMPERPUSToolStripMenuItem.Text = "SISTEM PERPUS";
+            // 
+            // menuUtama
+            // 
+            this.menuUtama.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuUtama.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuUtama.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.menuUtama.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripDropDownButton1,
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripDropDownButton2,
             this.toolStripSeparator1,
             this.toolStripButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 29);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(129, 378);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.menuUtama.Location = new System.Drawing.Point(0, 29);
+            this.menuUtama.Name = "menuUtama";
+            this.menuUtama.Size = new System.Drawing.Size(129, 378);
+            this.menuUtama.TabIndex = 2;
+            this.menuUtama.Text = "toolStrip1";
             // 
             // toolStripDropDownButton1
             // 
@@ -91,20 +100,20 @@
             // btnOpenFormDataBuku
             // 
             this.btnOpenFormDataBuku.Name = "btnOpenFormDataBuku";
-            this.btnOpenFormDataBuku.Size = new System.Drawing.Size(152, 22);
+            this.btnOpenFormDataBuku.Size = new System.Drawing.Size(175, 26);
             this.btnOpenFormDataBuku.Text = "Data Buku";
             this.btnOpenFormDataBuku.Click += new System.EventHandler(this.btnOpenFormDataBuku_Click);
             // 
             // dataMemberToolStripMenuItem2
             // 
             this.dataMemberToolStripMenuItem2.Name = "dataMemberToolStripMenuItem2";
-            this.dataMemberToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.dataMemberToolStripMenuItem2.Size = new System.Drawing.Size(175, 26);
             this.dataMemberToolStripMenuItem2.Text = "Data Member";
             // 
             // dataAdminToolStripMenuItem1
             // 
             this.dataAdminToolStripMenuItem1.Name = "dataAdminToolStripMenuItem1";
-            this.dataAdminToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dataAdminToolStripMenuItem1.Size = new System.Drawing.Size(175, 26);
             this.dataAdminToolStripMenuItem1.Text = "Data admin";
             // 
             // toolStripButton1
@@ -122,7 +131,7 @@
             this.toolStripButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(101, 20);
+            this.toolStripButton2.Size = new System.Drawing.Size(126, 25);
             this.toolStripButton2.Text = "Pengembalian";
             // 
             // toolStripDropDownButton2
@@ -134,20 +143,25 @@
             this.toolStripDropDownButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(101, 20);
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(126, 25);
             this.toolStripDropDownButton2.Text = "Laporan";
             // 
             // laporanPeminjamanToolStripMenuItem
             // 
             this.laporanPeminjamanToolStripMenuItem.Name = "laporanPeminjamanToolStripMenuItem";
-            this.laporanPeminjamanToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.laporanPeminjamanToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.laporanPeminjamanToolStripMenuItem.Text = "Laporan peminjaman";
             // 
             // laporanPengembalianToolStripMenuItem
             // 
             this.laporanPengembalianToolStripMenuItem.Name = "laporanPengembalianToolStripMenuItem";
-            this.laporanPengembalianToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.laporanPengembalianToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.laporanPengembalianToolStripMenuItem.Text = "Laporan pengembalian";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(126, 6);
             // 
             // toolStripButton3
             // 
@@ -155,31 +169,17 @@
             this.toolStripButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(101, 20);
+            this.toolStripButton3.Size = new System.Drawing.Size(126, 25);
             this.toolStripButton3.Text = "Masuk";
             this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(101, 6);
-            // 
-            // sISTEMPERPUSToolStripMenuItem
-            // 
-            this.sISTEMPERPUSToolStripMenuItem.Enabled = false;
-            this.sISTEMPERPUSToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.sISTEMPERPUSToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.sISTEMPERPUSToolStripMenuItem.Name = "sISTEMPERPUSToolStripMenuItem";
-            this.sISTEMPERPUSToolStripMenuItem.Size = new System.Drawing.Size(134, 25);
-            this.sISTEMPERPUSToolStripMenuItem.Text = "SISTEM PERPUS";
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 407);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.menuUtama);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -187,10 +187,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.menuUtama.ResumeLayout(false);
+            this.menuUtama.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +200,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip menuUtama;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem btnOpenFormDataBuku;
         private System.Windows.Forms.ToolStripMenuItem dataMemberToolStripMenuItem2;
